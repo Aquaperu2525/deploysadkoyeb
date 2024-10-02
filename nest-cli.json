@@ -3,6 +3,24 @@
   "collection": "@nestjs/schematics",
   "sourceRoot": "src",
   "compilerOptions": {
-    "deleteOutDir": true
+    "deleteOutDir": true,
+    "assets": [
+      {
+        "include": "/assets",
+        "outDir": "dist",
+        "watchAssets": true
+      },
+      {
+        "include": "/especificacionesTecnicas",
+        "outDir": "dist",
+        "watchAssets": true
+      },
+      {
+        "include": "toolsdocx/services/styles",
+        "outDir": "dist",
+        "watchAssets": true
+      }
+    ],
+    "watchAssets": true
   }
 }
